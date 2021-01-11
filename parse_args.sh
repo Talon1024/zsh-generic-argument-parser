@@ -11,7 +11,6 @@ defined_flags=()
 
 main(){
     while [[ -n $1 ]]; do
-        print " $1"
         if [[ $1 == (#i)flags:* ]]; then
             parse_flagdefs $1
         elif [[ $1 == \-\-[[:alnum:]-=]## ]]; then
